@@ -12,8 +12,8 @@ func main() {
 
 	// Build the MapHandler using the mux as the fallback
 	pathsToUrls := map[string]string{
-		"/urlshort-godoc": "https://godoc.org/github.com/gophercises/urlshort",
-		"/yaml-godoc":     "https://godoc.org/gopkg.in/yaml.v2",
+		"/w3":        "https://www.w3schools.com/html/",
+		"/html-wiki": "https://en.wikipedia.org/wiki/HTML",
 	}
 	mapHandler := urlshort.MapHandler(pathsToUrls, mux)
 
@@ -21,9 +21,9 @@ func main() {
 	// fallback
 	yaml := `
 - path: /urlshort
-  url: https://github.com/gophercises/urlshort
-- path: /student
-  url: https://github.com/gophercises/urlshort/tree/master/students
+  url: https://github.com/anushkamittal20/urlshort
+- path: /link
+  url: https://github.com/anushkamittal20/link
 - path: /urlshort-final
   url: https://github.com/gophercises/urlshort/tree/solution
 `
@@ -42,5 +42,5 @@ func defaultMux() *http.ServeMux {
 }
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Hello, world!")
+	fmt.Fprintln(w, "Hello, world! \n to redirect to a new page try entering http://localhost:8080/w3 or \n http://localhost:8080/html-wiki or \n to redirect to my go projects on github \n typehttp://localhost:8080/link or http://localhost:8080/urlshort \n Thank you")
 }
