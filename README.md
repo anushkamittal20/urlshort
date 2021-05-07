@@ -16,12 +16,12 @@ One can add their own urls by changing    ```
                                            ```
 or in main.go
 
-       ```  
+```  
        pathsToUrls := map[string]string{
               "/w3":        "https://www.w3schools.com/html/",
               "/html-wiki": "https://en.wikipedia.org/wiki/HTML",
             } 
-            ```
+```
             
 add by adding elements to the mapp in form :    
 ```    
