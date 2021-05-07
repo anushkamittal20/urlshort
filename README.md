@@ -27,7 +27,7 @@ add by adding elements to the mapp in form :
 ```    
 "/shortpathname": "url_to_be redirected_to",  
 ```
-To execute clone the repository and 
+To execute , clone the repository and 
 ```
 go run main/main.go
 ```
