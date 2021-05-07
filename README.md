@@ -27,6 +27,7 @@ add by adding elements to the mapp in form :
 ```    
 "/shortpathname": "url_to_be redirected_to",  
 ```
+The handler.go will try to match any incoming requests in its mapHandler and the yamlHandler will turn the yaml requests to the format required by mapHandler and reuse its functionality.
 To execute , clone the repository and 
 ```
 go run main/main.go
